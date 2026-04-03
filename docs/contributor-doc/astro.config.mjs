@@ -9,8 +9,8 @@ const base = process.env.BASE_PATH ?? '/csarian';
 
 // https://astro.build/config
 export default defineConfig({
-	site,
-	base,
+	site: 'https://SarianDocs.github.io',
+	base: '/contributor-doc',
 	integrations: [
 		starlight({
 			title: 'Sarian Docs',
