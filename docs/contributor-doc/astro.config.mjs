@@ -23,7 +23,7 @@ export default defineConfig({
 					label: 'Guides',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Contributing Guide', slug: 'guides/contributing_guide' },
+						{ label: 'Contributing Guide', slug: 'guides/contributingguide' },
 					],
 				},
 				{
