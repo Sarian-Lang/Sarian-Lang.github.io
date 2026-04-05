@@ -9,28 +9,28 @@ const base = process.env.BASE_PATH ?? '/csarian';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://SarianDocs.github.io',
-	base: '/contributor-doc',
-	integrations: [
-		starlight({
-			title: 'Sarian Docs',
-			logo: {
-				light: './src/assets/SarianLogo.webp',
-				dark: './src/assets/SarianLogo.webp',
-			},
-			sidebar: [
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Contributing Guide', slug: 'guides/contributingguide' },
-					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
-			],
-		}),
-	],
+  site: 'https://SarianDocs.github.io',
+  // base: '/contributor-doc',  // removed to allow dynamic base
+  integrations: [
+    starlight({
+      title: 'Sarian Docs',
+      logo: {
+        light: './src/assets/SarianLogo.webp',
+        dark: './src/assets/SarianLogo.webp',
+      },
+      sidebar: [
+        {
+          label: 'Guides',
+          items: [
+            // Each item here is one entry in the navigation menu.
+            { label: 'Contributing Guide', slug: 'guides/contributingguide' },
+          ],
+        },
+        {
+          label: 'Reference',
+          autogenerate: { directory: 'reference' },
+        },
+      ],
+    }),
+  ],
 });
