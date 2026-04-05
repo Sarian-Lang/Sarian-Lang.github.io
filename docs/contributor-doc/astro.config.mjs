@@ -5,12 +5,12 @@ import starlight from '@astrojs/starlight';
 // GitHub Pages project URL: https://<owner>.github.io/Sarian-Lang.github.io/
 // CI sets SITE_URL; override BASE_PATH if the repo is ever renamed.
 const site = process.env.SITE_URL ?? 'https://SarianDocs.github.io';
-const base = process.env.BASE_PATH ?? '/Sarian-Lang.github.io';
+const base = process.env.BASE_PATH ?? '/';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://SarianDocs.github.io',
-  base: '/Sarian-Lang.github.io/',
+  base: '/',
   integrations: [
     starlight({
       title: 'Sarian Docs',
