@@ -2,15 +2,11 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-// GitHub Pages project URL: https://<owner>.github.io/Sarian-Lang.github.io/
-// CI sets SITE_URL; override BASE_PATH if the repo is ever renamed.
-const site = process.env.SITE_URL ?? 'https://SarianDocs.github.io';
-const base = process.env.BASE_PATH ?? '/Sarian-Lang.github.io';
-
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://SarianDocs.github.io',
-  base: '/Sarian-Lang.github.io/',
+  site: 'https://Sarian-Lang.github.io',
+  base: '/',
+
   integrations: [
     starlight({
       title: 'Sarian Docs',
@@ -22,7 +18,6 @@ export default defineConfig({
         {
           label: 'Guides',
           items: [
-            // Each item here is one entry in the navigation menu.
             { label: 'Contributing Guide', slug: 'guides/contributingguide' },
           ],
         },
